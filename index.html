@@ -13,28 +13,12 @@
      서울 놀이 — 웹사이트 시안 v1 (이미지 소스 적용)
      ============================================ */
 
-:root {
-–bg-black: #0a0a0a;
-–bg-deep: #050505;
-–bg-white: #f5f3ed;
-–ink-white: #f5f3ed;
-–ink-black: #0a0a0a;
-–accent-blue: #1e1eff;
-–accent-tan: #d8c9a8;
-–editor-mute: #8a8478;
-–editor-bg: #131312;
-–editor-border: #2a2826;
-–context-tag: #c4b78a;
-–font-serif: ‘Noto Serif KR’, serif;
-–font-sans: ‘IBM Plex Sans KR’, sans-serif;
-}
-
 - { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
   body {
-  background: var(–bg-black);
-  color: var(–ink-white);
-  font-family: var(–font-serif);
+  background: #0a0a0a;
+  color: #f5f3ed;
+  font-family: ‘Noto Serif KR’, serif;
   line-height: 1.7;
   overflow-x: hidden;
   }
@@ -52,26 +36,26 @@ position: relative;
 position: absolute;
 top: 4vh;
 left: 6vw;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.15em;
-color: var(–accent-tan);
+color: #d8c9a8;
 text-transform: uppercase;
 }
 .page-marker__num {
 font-size: 1.6rem;
 font-weight: 700;
-color: var(–accent-blue);
+color: #1e1eff;
 margin-right: 0.6em;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 vertical-align: -0.05em;
 }
 
 /* 편집자 연결층 */
 .editor-layer {
-background: var(–editor-bg);
-border-top: 1px solid var(–editor-border);
-border-bottom: 1px solid var(–editor-border);
+background: #131312;
+border-top: 1px solid #2a2826;
+border-bottom: 1px solid #2a2826;
 padding: 6vh 6vw;
 position: relative;
 }
@@ -80,16 +64,16 @@ display: flex;
 align-items: center;
 gap: 0.8em;
 margin-bottom: 3rem;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.75rem;
 letter-spacing: 0.2em;
 text-transform: uppercase;
-color: var(–editor-mute);
+color: #8a8478;
 }
 .editor-layer__head .dot {
 width: 6px;
 height: 6px;
-background: var(–editor-mute);
+background: #8a8478;
 border-radius: 50%;
 display: inline-block;
 }
@@ -101,7 +85,7 @@ max-width: 1400px;
 margin: 0 auto;
 }
 .editor-layer__connector p {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-weight: 300;
 font-size: 1.25rem;
 line-height: 1.85;
@@ -110,27 +94,27 @@ font-style: italic;
 }
 .editor-layer__connector p + p { margin-top: 1.3rem; }
 .editor-layer__context {
-border-left: 1px solid var(–editor-border);
+border-left: 1px solid #2a2826;
 padding-left: 2.2rem;
 }
 .context-label {
 display: inline-block;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.68rem;
 letter-spacing: 0.22em;
 text-transform: uppercase;
-color: var(–context-tag);
+color: #c4b78a;
 background: rgba(196, 183, 138, 0.08);
 padding: 0.3em 0.8em;
 margin-bottom: 1.2rem;
 border: 1px solid rgba(196, 183, 138, 0.25);
 }
 .editor-layer__context p {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-weight: 400;
 font-size: 0.93rem;
 line-height: 1.7;
-color: var(–editor-mute);
+color: #8a8478;
 }
 .editor-layer__context p + p { margin-top: 0.9rem; }
 .editor-layer__context .must {
@@ -141,21 +125,21 @@ font-weight: 500;
 /* 사이트 진입 */
 .site-entry {
 min-height: 100vh;
-background: var(–bg-deep);
+background: #050505;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 padding: 6vh 6vw;
 }
 .site-entry__brand {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.3em;
-color: var(–editor-mute);
+color: #8a8478;
 text-transform: uppercase;
 }
 .site-entry__title {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 900;
 font-size: clamp(3.5rem, 12vw, 9rem);
 line-height: 0.95;
@@ -163,11 +147,11 @@ letter-spacing: -0.04em;
 margin-top: auto;
 }
 .site-entry__title .accent {
-color: var(–accent-blue);
+color: #1e1eff;
 font-style: italic;
 }
 .site-entry__sub {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-weight: 300;
 font-size: 1.1rem;
 color: #b8b3a3;
@@ -180,27 +164,27 @@ margin-top: 5rem;
 display: flex;
 justify-content: space-between;
 align-items: flex-end;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.18em;
-color: var(–editor-mute);
+color: #8a8478;
 text-transform: uppercase;
 }
 .scroll-cue { display: flex; align-items: center; gap: 0.8em; }
-.scroll-cue__line { width: 60px; height: 1px; background: var(–editor-mute); }
+.scroll-cue__line { width: 60px; height: 1px; background: #8a8478; }
 
 /* PAGE 1 — 명제 (3D 기울임 → 납작) */
 #page-1 {
-background: var(–bg-white);
-color: var(–ink-black);
+background: #f5f3ed;
+color: #0a0a0a;
 text-align: center;
 align-items: center;
 overflow: hidden;
 perspective: 1400px;
 perspective-origin: 50% 60%;
 }
-#page-1 .page-marker { color: var(–ink-black); opacity: 0.5; }
-#page-1 .page-marker__num { color: var(–accent-blue); }
+#page-1 .page-marker { color: #0a0a0a; opacity: 0.5; }
+#page-1 .page-marker__num { color: #1e1eff; }
 
 .declaration {
 transform-style: preserve-3d;
@@ -208,7 +192,7 @@ transform-style: preserve-3d;
 transform: rotateX(58deg) rotateZ(-4deg) translateZ(-40px);
 transform-origin: 50% 100%;
 transition: transform 1.6s cubic-bezier(0.22, 1, 0.36, 1);
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 700;
 font-size: clamp(1.6rem, 5.2vw, 4.2rem);
 line-height: 1.25;
@@ -228,7 +212,7 @@ cursor: pointer;
 position: relative;
 display: inline-block;
 padding: 0.05em 0.3em;
-color: var(–ink-white);
+color: #f5f3ed;
 z-index: 1;
 }
 /* 원래 이미지: 솔리드 파란 직사각형 */
@@ -236,17 +220,17 @@ z-index: 1;
 content: ‘’;
 position: absolute;
 inset: -0.05em -0.1em;
-background: var(–accent-blue);
+background: #1e1eff;
 z-index: -1;
 transition: transform 0.6s;
 pointer-events: none;
 }
 .page-1__hint {
 margin-top: 3rem;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.22em;
-color: var(–ink-black);
+color: #0a0a0a;
 opacity: 0.4;
 text-transform: uppercase;
 transition: opacity 0.6s;
@@ -267,11 +251,11 @@ max-height: 12000px;
 opacity: 1;
 }
 .page-1__reveal__label {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.72rem;
 letter-spacing: 0.28em;
 text-transform: uppercase;
-color: var(–accent-blue);
+color: #1e1eff;
 margin-bottom: 1.8rem;
 display: flex;
 align-items: center;
@@ -281,26 +265,26 @@ gap: 0.8em;
 content: ‘’;
 width: 28px;
 height: 1px;
-background: var(–accent-blue);
+background: #1e1eff;
 }
 .page-1__reveal p {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: clamp(0.98rem, 1.4vw, 1.12rem);
 line-height: 2;
-color: var(–ink-black);
+color: #0a0a0a;
 margin-bottom: 1.4rem;
 text-wrap: pretty;
 }
 .page-1__reveal p.gap { margin-top: 2.4rem; }
 .page-1__reveal p em {
 font-style: normal;
-color: var(–accent-blue);
+color: #1e1eff;
 font-weight: 500;
 }
 
 /* PAGE 2 — 사그라다 (실제 이미지) */
-#page-2 { background: var(–bg-black); }
+#page-2 { background: #0a0a0a; }
 .sagrada-layout {
 display: grid;
 grid-template-columns: 1.2fr 1fr;
@@ -310,11 +294,11 @@ max-width: 1400px;
 margin: 0 auto;
 }
 .sagrada-text p {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: 1.2rem;
 line-height: 1.95;
-color: var(–ink-white);
+color: #f5f3ed;
 opacity: 0;
 transform: translateY(20px);
 animation: fadeUp 1.4s forwards;
@@ -344,16 +328,16 @@ filter: drop-shadow(0 30px 80px rgba(0,0,0,0.45));
 position: absolute;
 bottom: -1.8rem;
 left: 0;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.7rem;
 letter-spacing: 0.22em;
-color: var(–editor-mute);
+color: #8a8478;
 text-transform: uppercase;
 }
 
 /* PAGE 3 — 오벌 스택 (실제 이미지) */
 #page-3 {
-background: var(–bg-black);
+background: #0a0a0a;
 align-items: center;
 }
 .oval-stack-img {
@@ -379,20 +363,20 @@ max-width: 720px;
 text-align: center;
 }
 .oval-quote {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: 1.18rem;
 line-height: 1.85;
-color: var(–ink-white);
+color: #f5f3ed;
 opacity: 0;
 animation: fadeUp 1.5s forwards;
 animation-delay: 1.6s;
 }
-.oval-quote em { color: var(–accent-tan); font-style: normal; }
+.oval-quote em { color: #d8c9a8; font-style: normal; }
 
 /* PAGE 4 — 京 → 傾 어원 개입 (워드클라우드 이미지) */
 #page-4 {
-background: var(–bg-black);
+background: #0a0a0a;
 min-height: 250vh;
 padding: 0;
 position: relative;
@@ -408,7 +392,7 @@ align-items: center;
 padding: 8vh 6vw;
 overflow: hidden;
 }
-.page-4-sticky .page-marker { color: var(–accent-tan); z-index: 5; }
+.page-4-sticky .page-marker { color: #d8c9a8; z-index: 5; }
 
 .wordcloud-img {
 position: absolute;
@@ -441,11 +425,11 @@ transition: opacity 0.6s ease;
 }
 .hanja-stage.shown { opacity: 1; }
 .hanja-stage .hanja {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 900;
 font-size: clamp(8rem, 18vw, 16rem);
 line-height: 1;
-color: var(–ink-white);
+color: #f5f3ed;
 transform-origin: center;
 transition: transform 0.05s linear;
 display: block;
@@ -454,7 +438,7 @@ display: block;
 position: absolute;
 top: 50%; left: 50%;
 transform: translate(-50%, -50%);
-color: var(–accent-blue);
+color: #1e1eff;
 opacity: 0;
 transition: opacity 0.05s linear;
 }
@@ -465,22 +449,22 @@ left: 50%;
 transform: translateX(-50%);
 max-width: 720px;
 text-align: center;
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 500;
 font-size: 1.05rem;
 line-height: 1.95;
-color: var(–ink-white);
+color: #f5f3ed;
 opacity: 0;
 transition: opacity 0.8s ease;
 padding: 0 6vw;
 z-index: 3;
 }
 .hanja-reveal.shown { opacity: 1; }
-.hanja-reveal em { color: var(–accent-blue); font-style: normal; }
+.hanja-reveal em { color: #1e1eff; font-style: normal; }
 
 /* PAGE 4.5 — 미끄러진 자국 (실제 smear 이미지) */
 #page-4-5 {
-background: var(–bg-black);
+background: #0a0a0a;
 min-height: 80vh;
 position: relative;
 overflow: hidden;
@@ -508,16 +492,16 @@ display: block;
 position: absolute;
 bottom: 4vh;
 left: 6vw;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.75rem;
 letter-spacing: 0.2em;
-color: var(–editor-mute);
+color: #8a8478;
 text-transform: uppercase;
 opacity: 0.6;
 }
 
 /* PAGE 5 — 인터뷰 */
-#page-5 { background: var(–bg-black); }
+#page-5 { background: #0a0a0a; }
 .interview-head {
 display: flex;
 align-items: center;
@@ -529,27 +513,27 @@ margin-right: auto;
 width: 100%;
 }
 .interview-head__num {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 900;
 font-size: clamp(4rem, 10vw, 7rem);
-color: var(–accent-tan);
+color: #d8c9a8;
 line-height: 1;
 }
 .interview-head__labels {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 700;
 font-size: clamp(1.5rem, 3.5vw, 2.4rem);
 line-height: 1.3;
 }
-.interview-head__labels .answer { color: var(–accent-blue); display: block; margin-top: 0.2em; }
+.interview-head__labels .answer { color: #1e1eff; display: block; margin-top: 0.2em; }
 .interview-body { max-width: 760px; margin: 0 auto; }
 .qa { margin-bottom: 3.5rem; }
 .qa__q {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-weight: 500;
 font-size: 0.95rem;
 line-height: 1.7;
-color: var(–accent-tan);
+color: #d8c9a8;
 margin-bottom: 1rem;
 padding-left: 2.4em;
 position: relative;
@@ -558,14 +542,14 @@ position: relative;
 content: ‘Q’;
 position: absolute;
 left: 0;
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 700;
 font-size: 1.4rem;
-color: var(–accent-tan);
+color: #d8c9a8;
 line-height: 1;
 }
 .qa__a {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: 1.18rem;
 line-height: 1.95;
@@ -576,30 +560,30 @@ position: relative;
 content: ‘A’;
 position: absolute;
 left: 0;
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 700;
 font-size: 1.4rem;
-color: var(–ink-white);
+color: #f5f3ed;
 line-height: 1;
 }
 .qa–key .qa__a {
 font-size: 1.4rem;
 font-style: italic;
-color: var(–accent-blue);
+color: #1e1eff;
 }
 
 /* PAGE 6 — 디렉터 */
 #page-6 {
-background: var(–bg-deep);
+background: #050505;
 align-items: center;
 text-align: center;
 }
 .director-mark {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.75rem;
 letter-spacing: 0.3em;
 text-transform: uppercase;
-color: var(–editor-mute);
+color: #8a8478;
 margin-bottom: 4rem;
 display: flex;
 align-items: center;
@@ -611,21 +595,21 @@ justify-content: center;
 content: ‘’;
 width: 40px;
 height: 1px;
-background: var(–editor-mute);
+background: #8a8478;
 }
 .director-voice {
 max-width: 680px;
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: clamp(1.15rem, 2.2vw, 1.4rem);
 line-height: 2.1;
-color: var(–ink-white);
+color: #f5f3ed;
 }
 .director-voice p + p { margin-top: 1.8rem; }
 .director-voice .residual {
 font-style: italic;
 font-weight: 500;
-color: var(–accent-tan);
+color: #d8c9a8;
 font-size: 1.3em;
 line-height: 1.5;
 margin: 2.5rem 0;
@@ -634,18 +618,18 @@ display: block;
 .director-placeholder {
 margin-top: 4rem;
 padding: 1.5rem 2rem;
-border: 1px dashed var(–editor-border);
-font-family: var(–font-sans);
+border: 1px dashed #2a2826;
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.85rem;
-color: var(–editor-mute);
+color: #8a8478;
 max-width: 540px;
 text-align: left;
 }
-.director-placeholder strong { color: var(–context-tag); font-weight: 600; letter-spacing: 0.08em; }
+.director-placeholder strong { color: #c4b78a; font-weight: 600; letter-spacing: 0.08em; }
 
 /* PAGE 6 → 7 전환: 회전하는 “서울놀이” 글자 이미지 */
 .bridge-magic {
-background: var(–bg-deep);
+background: #f5f3ed;
 min-height: 90vh;
 display: flex;
 align-items: center;
@@ -664,8 +648,8 @@ animation: slowSpin 60s linear infinite;
 width: 100%;
 height: 100%;
 object-fit: contain;
-filter: invert(1);
-opacity: 0.92;
+filter: none;
+opacity: 1;
 }
 @keyframes slowSpin {
 to { transform: rotate(360deg); }
@@ -675,10 +659,10 @@ position: absolute;
 bottom: 5vh;
 left: 50%;
 transform: translateX(-50%);
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.75rem;
 letter-spacing: 0.3em;
-color: var(–editor-mute);
+color: #555;
 text-transform: uppercase;
 text-align: center;
 }
@@ -687,12 +671,12 @@ display: block;
 margin-top: 0.6em;
 font-size: 0.68rem;
 letter-spacing: 0.2em;
-color: var(–accent-tan);
-opacity: 0.7;
+color: #7a6e55;
+opacity: 0.9;
 }
 
 /* PAGE 7 — 놀이 이론 */
-#page-7 { background: var(–bg-black); padding-top: 0; }
+#page-7 { background: #0a0a0a; padding-top: 0; }
 .page-7-header {
 min-height: 60vh;
 display: flex;
@@ -702,20 +686,20 @@ position: relative;
 padding: 8vh 6vw 4vh;
 }
 .page-7-header__title {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 900;
 font-size: clamp(2.4rem, 6vw, 4.5rem);
 letter-spacing: -0.02em;
 text-align: center;
 }
-.page-7-header__title .a { color: var(–accent-blue); font-style: italic; }
-.page-7-header__title .b { color: var(–accent-tan); display: block; font-size: 0.55em; letter-spacing: 0.1em; margin-top: 0.4em; font-style: normal; font-weight: 500; }
+.page-7-header__title .a { color: #1e1eff; font-style: italic; }
+.page-7-header__title .b { color: #d8c9a8; display: block; font-size: 0.55em; letter-spacing: 0.1em; margin-top: 0.4em; font-style: normal; font-weight: 500; }
 
 .theory-section {
 padding: 12vh 6vw;
 max-width: 1100px;
 margin: 0 auto;
-border-top: 1px solid var(–editor-border);
+border-top: 1px solid #2a2826;
 }
 .theory-card__header {
 display: grid;
@@ -725,44 +709,44 @@ align-items: baseline;
 margin-bottom: 3rem;
 }
 .theory-card__name {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 900;
 font-size: clamp(2.4rem, 5vw, 3.8rem);
 line-height: 1;
 letter-spacing: -0.02em;
 }
 .theory-card__name .en {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-weight: 300;
 font-size: 0.45em;
-color: var(–accent-tan);
+color: #d8c9a8;
 letter-spacing: 0.05em;
 display: block;
 margin-top: 0.4em;
 }
 .theory-card__source {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.85rem;
-color: var(–editor-mute);
+color: #8a8478;
 line-height: 1.6;
 }
-.theory-card__source .author { color: var(–ink-white); font-weight: 500; }
+.theory-card__source .author { color: #f5f3ed; font-weight: 500; }
 .theory-quote-original {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: 1.15rem;
 line-height: 1.85;
-color: var(–ink-white);
+color: #f5f3ed;
 padding: 2rem 0;
-border-left: 2px solid var(–accent-tan);
+border-left: 2px solid #d8c9a8;
 padding-left: 2rem;
 margin-bottom: 2rem;
 }
 .theory-bridge {
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.2em;
-color: var(–editor-mute);
+color: #8a8478;
 text-transform: uppercase;
 margin: 2.5rem 0 1.5rem;
 display: flex;
@@ -773,25 +757,25 @@ gap: 1em;
 content: ‘’;
 width: 24px;
 height: 1px;
-background: var(–editor-mute);
+background: #8a8478;
 }
 .theory-quote-j {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 500;
 font-size: 1.5rem;
 line-height: 1.65;
-color: var(–accent-blue);
+color: #1e1eff;
 font-style: italic;
 padding: 1.5rem 0;
 margin-bottom: 2rem;
 }
 .theory-gloss {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-size: 1.05rem;
 line-height: 1.85;
-color: var(–accent-tan);
+color: #d8c9a8;
 padding-left: 1.5rem;
-border-left: 1px solid var(–accent-tan);
+border-left: 1px solid #d8c9a8;
 }
 .theory-evidence {
 margin-top: 3rem;
@@ -807,17 +791,17 @@ filter: drop-shadow(0 30px 60px rgba(30, 30, 255, 0.35));
 .theory-evidence__cap {
 display: block;
 margin-top: 1.4rem;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.15em;
-color: var(–editor-mute);
+color: #8a8478;
 line-height: 1.7;
 }
 
 /* 사이트 닫음 */
 .site-close {
 min-height: 80vh;
-background: var(–bg-deep);
+background: #050505;
 padding: 12vh 6vw;
 display: flex;
 flex-direction: column;
@@ -829,38 +813,38 @@ text-align: left;
 max-width: 720px;
 }
 .site-close__statement p {
-font-family: var(–font-serif);
+font-family: ‘Noto Serif KR’, serif;
 font-weight: 400;
 font-size: clamp(1.05rem, 1.6vw, 1.25rem);
 line-height: 2;
-color: var(–ink-white);
+color: #f5f3ed;
 margin-bottom: 1.6rem;
 text-wrap: pretty;
 }
 .site-close__statement p em {
 font-style: normal;
-color: var(–accent-tan);
+color: #d8c9a8;
 font-weight: 500;
 }
 .site-close__statement .closing {
 margin-top: 3rem;
 font-style: italic;
-color: var(–accent-blue);
+color: #1e1eff;
 font-size: clamp(1.15rem, 1.8vw, 1.4rem);
 }
 .site-close__sig {
 margin-top: 4rem;
-font-family: var(–font-sans);
+font-family: ‘IBM Plex Sans KR’, sans-serif;
 font-size: 0.78rem;
 letter-spacing: 0.25em;
-color: var(–editor-mute);
+color: #8a8478;
 text-transform: uppercase;
 }
 
 /* 반응형 */
 @media (max-width: 800px) {
 .editor-layer__body { grid-template-columns: 1fr; gap: 2rem; }
-.editor-layer__context { border-left: none; padding-left: 0; padding-top: 1.5rem; border-top: 1px solid var(–editor-border); }
+.editor-layer__context { border-left: none; padding-left: 0; padding-top: 1.5rem; border-top: 1px solid #2a2826; }
 .sagrada-layout { grid-template-columns: 1fr; gap: 2.5rem; }
 .theory-card__header { grid-template-columns: 1fr; gap: 0.8rem; }
 .interview-head { gap: 1.5rem; margin-bottom: 3.5rem; }
@@ -882,6 +866,79 @@ text-transform: uppercase;
 .theory-quote-j { font-size: 1.25rem; padding: 1rem 0; }
 .theory-quote-original { padding: 1.5rem 0 1.5rem 1.5rem; font-size: 1.05rem; }
 .theory-evidence { aspect-ratio: 1; max-width: 100%; }
+}
+
+/* ── 이론 토글 ───────────────────────────────── */
+.theory-toggle-btn {
+display: inline-flex;
+align-items: center;
+gap: 0.6em;
+margin-top: 2.5rem;
+background: none;
+border: 1px solid #2a2826;
+color: #8a8478;
+font-family: ‘IBM Plex Sans KR’, sans-serif;
+font-size: 0.75rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+padding: 0.7em 1.2em;
+cursor: pointer;
+transition: border-color 0.3s, color 0.3s;
+}
+.theory-toggle-btn:hover {
+border-color: #d8c9a8;
+color: #d8c9a8;
+}
+.theory-toggle-btn .arrow {
+display: inline-block;
+transition: transform 0.35s;
+}
+.theory-toggle-btn.open .arrow { transform: rotate(180deg); }
+
+.theory-full {
+max-height: 0;
+overflow: hidden;
+transition: max-height 1s ease, opacity 0.6s ease;
+opacity: 0;
+}
+.theory-full.shown {
+max-height: 4000px;
+opacity: 1;
+}
+.theory-full__inner {
+padding-top: 2.5rem;
+border-top: 1px solid #2a2826;
+margin-top: 2.5rem;
+}
+.theory-full__inner h4 {
+font-family: ‘IBM Plex Sans KR’, sans-serif;
+font-size: 0.75rem;
+letter-spacing: 0.2em;
+text-transform: uppercase;
+color: #d8c9a8;
+margin-bottom: 1.4rem;
+}
+.theory-full__inner p {
+font-family: ‘Noto Serif KR’, serif;
+font-size: 1rem;
+line-height: 1.9;
+color: #c8c2b4;
+margin-bottom: 1.2rem;
+}
+.theory-full__inner blockquote {
+border-left: 2px solid #1e1eff;
+padding-left: 1.5rem;
+margin: 1.8rem 0;
+font-family: ‘Noto Serif KR’, serif;
+font-size: 1.05rem;
+line-height: 1.85;
+color: #f5f3ed;
+font-style: italic;
+}
+
+/* ── 스크롤 배경 페이드 ──────────────────────── */
+body {
+transition: background-color 0.8s ease;
 }
 </style>
 
@@ -1022,7 +1079,7 @@ text-transform: uppercase;
 <!-- 편집자 연결층 3→4 -->
 
 <aside class="editor-layer">
-  <header class="editor-layer__head"><span class="dot"></span>편집자 연결 — 3 → 4 · 일반 명제에서 서울이라는 특수 사례로 <strong style="color: var(--accent-blue); margin-left: 0.5em;">★ 핵심 다리</strong></header>
+  <header class="editor-layer__head"><span class="dot"></span>편집자 연결 — 3 → 4 · 일반 명제에서 서울이라는 특수 사례로 <strong style="color: #1e1eff; margin-left: 0.5em;">★ 핵심 다리</strong></header>
   <div class="editor-layer__body">
     <div class="editor-layer__connector">
       <p>생각해보면 우리가 살아가는 장소들이 다 그런 것 같아요. 도시도, 동네도, 어떤 공동체도 — 그걸 처음부터 끝까지 통째로 아는 사람은 없어요. 우리는 늘 어딘가의 중간에 던져져서, 그 전에 무슨 일이 있었는지도 모르고, 앞으로 어떻게 될지도 모른 채로 그냥 살아가잖아요. 어쩌면 장소의 본질이라는 건 그 안에서 발견되는 게 아니라, 떠난 다음에야 사후적으로 구성되는 이름에 가까운 게 아닐까요. 고향을 떠올릴 때 떠오르는 게 본질이 아니라 냄새나 골목 같은 것들인 것처럼.</p>
@@ -1082,7 +1139,7 @@ text-transform: uppercase;
   <div class="editor-layer__body">
     <div class="editor-layer__connector">
       <p>여기까지의 글을 쓴 사람과, 그 글이 다 적힌 후 다시 대화를 나눴다.</p>
-      <p>다섯 개의 질문이 그 자리에서 만들어졌다. 이미 끝난 글 위에 다시 한 번 빛을 비추기 위해서.</p>
+      <p>열한 개의 질문이 그 자리에서 만들어졌다. 이미 끝난 글 위에 다시 한 번 빛을 비추기 위해서.</p>
     </div>
     <div class="editor-layer__context">
       <span class="context-label">맥락</span>
@@ -1097,7 +1154,7 @@ text-transform: uppercase;
 <section class="page" id="page-5" data-screen-label="05 인터뷰">
   <div class="page-marker"><span class="page-marker__num">05</span>인터뷰</div>
   <div class="interview-head">
-    <div class="interview-head__num">5</div>
+    <div class="interview-head__num">11</div>
     <div class="interview-head__labels">
       질문
       <span class="answer">답변</span>
@@ -1109,11 +1166,35 @@ text-transform: uppercase;
       <p class="qa__a">놀이는 '척'의 수사입니다. 서울 사람 아닌 이들이 모여서 진짜 서울의 본질이 존재하는 것처럼 행동하고, 모여서 공동체를 이루는 현상이 놀이 같다고 생각했어요.</p>
     </div>
     <div class="qa">
-      <p class="qa__q">본질은 없다고 보시는 건가요, 아니면 본질은 있되 자신은 거기에 닿지 못한다는 감각에 가까운 건가요?</p>
+      <p class="qa__q">'진짜 서울의 본질이 존재하는 것처럼'이라고 하셨는데, 그럼 본질은 없다고 보시는 건가요? 아니면 본질은 있되, 자신은 거기에 닿지 못한다는 감각에 가까운 건가요?</p>
       <p class="qa__a">어떤 지역 자체에 본질이란 게 있을까요? 반대로 제가 질문하죠. 기자님 고향은 어떤 본질을 갖나요?</p>
     </div>
     <div class="qa">
-      <p class="qa__q">서울 놀이는 정체성을 얻기 위해 하는 건가요, 아니면 정체성 없이도 살아남기 위해 하는 건가요?</p>
+      <p class="qa__q">고향을 떠올릴 때 떠오르는 건 본질이 아니라 냄새나 골목 같은 것들입니다. 본질이란 발견되는 게 아니라, 떠난 다음에야 사후적으로 구성되는 이름에 가깝다고 생각합니다. 그렇다면 서울도 살면서 구성되어가는 무언가라고 보신다면, 지금 이 시점에서 본인에게 서울은 어떤 형태인가요?</p>
+      <p class="qa__a">기울어져 있어요. 오르고 올라야 하는 곳인데, 실제로는 번지고 뭉개진 조감도를 기울여보면 원래대로 보이는 것처럼.</p>
+    </div>
+    <div class="qa">
+      <p class="qa__q">그 기울임을 유지하는 것이 결국 '서울 놀이'의 실체인가요? 그리고 그 기울임을 언제까지 유지할 수 있을 것 같으세요?</p>
+      <p class="qa__a">사람들은 자신의 투자를 정당화하기 위해 서울을 계속 올려치고 서울 놀이를 하지 않을까요? 사실 서울 토박이는 거의 없잖아요.</p>
+    </div>
+    <div class="qa">
+      <p class="qa__q">원본 없는 복사본들이 모여 원본처럼 행동하는 셈이군요. 그렇다면 서울 놀이는 자발적인 선택이라기보다, 이미 올라온 이상 멈출 수 없는 구조에 가깝다고 보시는 건가요?</p>
+      <p class="qa__a">우리 모두 속해 있죠. 저는 학교를 가면서 상경했는데, 그들은 항상 어딘가 애틋한 낯이었어요. 멈출 수 있을까요? 이 놀이는 서울의 모든 인간이 서울을 나눠 알면서, 내 몫의 앎만 갖고 있으면서 지속될 것 같아요. 나는 내가 만난 사람들의 우연으로만 서울을 넓힐 수 있을 것 같고.</p>
+    </div>
+    <div class="qa">
+      <p class="qa__q">그 우연에 기댄 앎 — 어떻게 보면 매우 수동적인 방식인데요. 본인은 그걸 아쉬워하시나요, 아니면 그게 오히려 맞는 방식이라고 받아들이시나요?</p>
+      <p class="qa__a">어쩔 수 없는 일이죠. 맞고 틀리고가 어디 있을까요.</p>
+    </div>
+    <div class="qa">
+      <p class="qa__q">글에서 "어설프게 살아가고 있다"고 쓰셨는데, 본인에게 '어설프다'는 건 어떤 상태인가요?</p>
+      <p class="qa__a">애써 내 정체성을 찾고 싶다는 조급함 같아요.</p>
+    </div>
+    <div class="qa">
+      <p class="qa__q">그 조급함은 서울에 있을 때 더 강해지나요, 고향에 있을 때 더 강해지나요?</p>
+      <p class="qa__a">서울에 있을 때요.</p>
+    </div>
+    <div class="qa">
+      <p class="qa__q">서울이 정체성을 찾게 만드는 동시에, 정체성을 가장 흔들리게 만드는 장소인 거네요. 그렇다면 서울 놀이는 — 정체성을 얻기 위해 하는 건가요, 아니면 정체성 없이도 살아남기 위해 하는 건가요?</p>
       <p class="qa__a">수렴 느낌이요. 둘이 결국 같은 방향으로 모이는.</p>
     </div>
     <div class="qa">
@@ -1121,7 +1202,7 @@ text-transform: uppercase;
       <p class="qa__a">삶이죠, 살아내야 할.</p>
     </div>
     <div class="qa qa--key">
-      <p class="qa__q">'서울 놀이'라는 명명이 본인에게 어떤 역할을 하나요? 거리를 두기 위한 언어인가요, 끌어안기 위한 언어인가요?</p>
+      <p class="qa__q">마지막으로, 이 모든 걸 '서울 놀이'라는 말로 정의했을 때 — 그 명명이 본인에게 어떤 역할을 하나요? 거리를 두기 위한 언어인가요, 아니면 끌어안기 위한 언어인가요?</p>
       <p class="qa__a">서로가 서로의 미숙함에 속아주는 미덕.</p>
     </div>
   </div>
@@ -1183,7 +1264,25 @@ text-transform: uppercase;
         "서울역은 나에게 서울과 동의어다. 서울역 가는 기차까지도 나에겐 서울이다."
       </blockquote>
       <p class="theory-gloss">서울이라는 마법원은 지도가 아니라 마음이 긋는 선.</p>
+
+```
+  <button class="theory-toggle-btn" onclick="toggleTheory(this, 'huizinga-full')">
+    전문 보기 <span class="arrow">↓</span>
+  </button>
+  <div class="theory-full" id="huizinga-full">
+    <div class="theory-full__inner">
+      <h4>1.1 · 놀이의 형식 조건: 자발성, 분리성, 비생산성</h4>
+      <p>1938년 출간된 『호모 루덴스』에서 호이징어는 놀이를 문화의 원천으로 규정하면서 형식 조건을 제시한다. 첫째, 자발적 참여(voluntary). 강제된 행위는 놀이가 아니다. 둘째, 일상 세계로부터의 공간적·시간적 분리(separateness). 놀이는 '마법원(magic circle)' 안에서만 유효하다. 셋째, 그 자체로 목적이 되는 무목적성(non-productivity). 놀이는 외부의 물질적 이익을 생산하지 않는다.</p>
+      <h4>1.2 · 서울이라는 마법원</h4>
+      <p>서울 놀이는 호이징어의 마법원 개념을 날카롭게 환기한다. 마법원의 핵심은 '그 안에서만 유효한 규칙'이다. 서울 놀이의 규칙은 다음과 같다: 출신지를 묻지 않는다. 대신 "어디 사세요?"라고 묻고, 대답은 지하철역으로 한다. 맛집을 알고, 분위기 좋은 술집을 알고, 문화생활을 찾아다니는 것처럼 행동한다. 이 규칙들은 서울이라는 마법원에 입장하기 위한 암묵적 입장료다.</p>
+      <h4>1.3 · 자발성의 역설</h4>
+      <p>호이징어에 따르면 놀이는 자발적이어야 한다. 그런데 서울 놀이는 자발적으로 선택되었는가? 상경한 이상, 놀이에서 이탈하는 것은 현실적으로 불가능하다. 서울이라는 마법원은 스스로 닫힌다. 진입은 선택이었을지 모르나, 지속은 선택이 아니다.</p>
+      <blockquote>우리 모두 속해 있죠. (…) 멈출 수 있을까요? — J, 저자 인터뷰</blockquote>
     </div>
+  </div>
+</div>
+```
+
   </div>
 
   <div class="theory-section">
@@ -1203,11 +1302,32 @@ text-transform: uppercase;
         "모두가 서울 사람 탈을 쓰고 하는 가면극이다."
       </blockquote>
       <p class="theory-gloss">척의 합의. 알면서 속아주는 것이 놀이의 규칙.</p>
-      <div class="theory-evidence">
-        <img src="https://i.imgur.com/qzoVTt9.png" alt="지하철에 탑승한 한복과 탈을 쓴 인물 — 미미크리" />
-        <span class="theory-evidence__cap">지하철 안의 가면극 — 척의 합의가 일상 위에 겹쳐지는 장면</span>
-      </div>
+
+```
+  <button class="theory-toggle-btn" onclick="toggleTheory(this, 'caillois-full')">
+    전문 보기 <span class="arrow">↓</span>
+  </button>
+  <div class="theory-full" id="caillois-full">
+    <div class="theory-full__inner">
+      <h4>2.1 · 카이와의 네 범주</h4>
+      <p>로제 카이와는 1958년 『놀이와 인간』에서 놀이를 네 가지 근본 범주로 분류한다. 아곤(Agon) — 경쟁에 기반한 놀이. 알레아(Alea) — 우연에 기반한 놀이. 미미크리(Mimicry) — 모방과 역할 놀이. 일링크스(Ilinx) — 현기증과 도취에 기반한 놀이.</p>
+      <h4>2.2 · 서울 놀이는 미미크리다</h4>
+      <p>카이와의 미미크리에서 핵심은 환상의 양면성이다. 놀이하는 자는 자신이 척하고 있다는 것을 안다. 동시에 그 척함을 유지한다. 상대방 역시 같은 미미크리를 수행 중이라는 암묵적 합의 — 서울 놀이는 참여자 전원이 공모한 집단 미미크리다.</p>
+      <blockquote>"너 그거 서울말 아니잖아." 근데 아무도 모른다. 나도 아니니까. 근데 아는 것처럼 행동한다. 여기는 서울이니까. — 「서울 놀이」</blockquote>
+      <h4>2.3 · 아곤·알레아·일링크스의 혼재</h4>
+      <p>서울에는 미미크리만이 있는 것이 아니다. 아곤(경쟁)의 차원도 강하게 작동한다. 서울은 입시, 취업, 주거에서 끊임없는 경쟁을 요구한다. 동시에 알레아(우연)의 차원도 있다 — "나는 내가 만난 사람들의 우연으로만 서울을 넓힐 수 있을 것 같고." 그리고 상경 첫날의 기차 안 묘사는 일링크스(현기증)의 전형적 경험이다.</p>
+      <h4>2.4 · 미미크리의 역설: 가면이 얼굴이 되는 순간</h4>
+      <p>카이와는 미미크리가 실패하는 경우를 경고한다. 놀이하는 자가 자신이 척하고 있다는 것을 잊어버리고 역할에 완전히 동화될 때 — 그것은 '소외(alienation)'로 변질된다. 서울 놀이는 이 경계선 위에서 아슬아슬하게 작동한다. 어설프게 시작한 서울 사람 흉내가 어느 순간 '나'가 된다.</p>
     </div>
+  </div>
+
+  <div class="theory-evidence">
+    <img src="https://i.imgur.com/qzoVTt9.png" alt="지하철에 탑승한 한복과 탈을 쓴 인물 — 미미크리" />
+    <span class="theory-evidence__cap">지하철 안의 가면극 — 척의 합의가 일상 위에 겹쳐지는 장면</span>
+  </div>
+</div>
+```
+
   </div>
 </section>
 
@@ -1300,8 +1420,49 @@ text-transform: uppercase;
       hanjaGlyph.style.opacity = '0';
     }
   }
-  window.addEventListener('scroll', updatePage4, { passive: true });
-  updatePage4();
+  /* 이론 토글 */
+  function toggleTheory(btn, id) {
+    const panel = document.getElementById(id);
+    const isOpen = panel.classList.contains('shown');
+    panel.classList.toggle('shown', !isOpen);
+    btn.classList.toggle('open', !isOpen);
+    btn.querySelector('.arrow').textContent = isOpen ? '↓' : '↑';
+    btn.childNodes[0].textContent = isOpen ? '전문 보기 ' : '접기 ';
+  }
+
+  /* 스크롤 배경 페이드 */
+  const bgMap = [
+    { selector: '.site-entry',   color: '#050505' },
+    { selector: '#page-1',       color: '#f5f3ed' },
+    { selector: '#page-2',       color: '#0a0a0a' },
+    { selector: '#page-3',       color: '#0a0a0a' },
+    { selector: '#page-4',       color: '#0a0a0a' },
+    { selector: '#page-4-5',     color: '#0a0a0a' },
+    { selector: '#page-5',       color: '#0a0a0a' },
+    { selector: '#page-6',       color: '#050505' },
+    { selector: '.bridge-magic', color: '#f5f3ed' },
+    { selector: '#page-7',       color: '#0a0a0a' },
+    { selector: '.site-close',   color: '#050505' },
+  ];
+
+  const bgSections = bgMap.map(({ selector, color }) => ({
+    el: document.querySelector(selector),
+    color,
+  })).filter(s => s.el);
+
+  function updateBg() {
+    const midY = window.innerHeight / 2;
+    let best = bgSections[0];
+    for (const s of bgSections) {
+      const rect = s.el.getBoundingClientRect();
+      if (rect.top <= midY) best = s;
+    }
+    document.body.style.backgroundColor = best.color;
+    /* page-1은 본문 배경이 흰색이므로 body도 흰색 */
+  }
+
+  window.addEventListener('scroll', updateBg, { passive: true });
+  updateBg();
 </script>
 
 </body>
