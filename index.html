@@ -383,6 +383,7 @@ position: relative;
 }
 .page-4-sticky {
 position: sticky;
+position: -webkit-sticky;
 top: 0;
 height: 100vh;
 display: flex;
@@ -401,7 +402,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 8vh 6vw;
-transition: opacity 0.9s ease, transform 0.9s ease;
 will-change: opacity, transform;
 }
 .wordcloud-img img {
@@ -850,22 +850,87 @@ text-transform: uppercase;
 .interview-head { gap: 1.5rem; margin-bottom: 3.5rem; }
 }
 @media (max-width: 600px) {
-.page { padding: 8vh 5vw; }
-.editor-layer { padding: 6vh 5vw; }
-.site-entry, .site-close, .theory-section { padding-left: 5vw; padding-right: 5vw; }
-.site-entry__sub { margin-top: 1.5rem; font-size: 1rem; }
-.site-entry__footer { margin-top: 3.5rem; flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+/* 기본 패딩 */
+.page { padding: 12vw 6vw; }
+.editor-layer { padding: 8vw 6vw; }
+.site-entry { padding: 6vw; }
+.site-close { padding: 12vw 6vw; }
+.theory-section { padding: 10vw 6vw; padding-left: 6vw; padding-right: 6vw; }
+
+/* 진입 */
+.site-entry__title { font-size: clamp(3rem, 18vw, 5rem); }
+.site-entry__sub { margin-top: 1.2rem; font-size: 0.95rem; line-height: 1.7; }
+.site-entry__footer { margin-top: 3rem; flex-direction: column; align-items: flex-start; gap: 1.2rem; }
 .scroll-cue { align-self: flex-end; }
-.oval-stack-img { width: 90vw; margin: 1.5rem 0 3rem; }
-.slip-mark { width: 92%; }
-.qa { margin-bottom: 2.5rem; }
+
+/* PAGE 1 선언문 — 작게, 줄바꿈 허용 */
+.declaration {
+font-size: clamp(1.3rem, 6vw, 2rem);
+white-space: normal;
+text-align: center;
+padding: 0 4vw;
+}
+.page-1__hint { font-size: 0.7rem; }
+.page-1__reveal { max-width: 100%; padding: 0 2vw; }
+.page-1__reveal p { font-size: 0.95rem; line-height: 1.85; }
+
+/* PAGE 2 사그라다 — 세로 스택 */
+.sagrada-layout {
+grid-template-columns: 1fr;
+gap: 2rem;
+}
+.sagrada-text p { font-size: 1rem; line-height: 1.8; }
+.sagrada-img { aspect-ratio: 3/2; }
+
+/* PAGE 3 오벌 */
+.oval-stack-img { width: 88vw; margin: 1rem 0 2.5rem; }
+.oval-quote { font-size: 1rem; }
+
+/* PAGE 4 한자 — 모바일에서 sticky 오작동 방지 */
+#page-4 { min-height: 280vh; }
+.hanja-stage .hanja { font-size: clamp(5rem, 28vw, 9rem); }
+.hanja-reveal { font-size: 0.92rem; line-height: 1.8; bottom: 5vh; }
+
+/* PAGE 4.5 스미어 */
+.slip-mark { width: 95%; }
+
+/* 편집자 레이어 */
+.editor-layer__body { grid-template-columns: 1fr; gap: 1.5rem; }
+.editor-layer__context { border-left: none; padding-left: 0; padding-top: 1.2rem; border-top: 1px solid #2a2826; }
+.editor-layer__connector p { font-size: 1rem; line-height: 1.7; }
+.editor-layer__context p { font-size: 0.85rem; }
+
+/* PAGE 5 인터뷰 */
+.interview-head { flex-direction: row; gap: 1rem; margin-bottom: 3rem; }
+.interview-head__num { font-size: clamp(2.5rem, 12vw, 4rem); }
+.interview-head__labels { font-size: clamp(1.1rem, 5vw, 1.6rem); }
+.qa { margin-bottom: 2.8rem; }
 .qa__q, .qa__a { padding-left: 2em; }
-.qa__q::before, .qa__a::before { font-size: 1.2rem; }
-.qa–key .qa__a { font-size: 1.25rem; }
-.director-mark { margin-bottom: 2.5rem; }
-.theory-quote-j { font-size: 1.25rem; padding: 1rem 0; }
-.theory-quote-original { padding: 1.5rem 0 1.5rem 1.5rem; font-size: 1.05rem; }
-.theory-evidence { aspect-ratio: 1; max-width: 100%; }
+.qa__q { font-size: 0.88rem; }
+.qa__a { font-size: 1rem; line-height: 1.85; }
+.qa__q::before, .qa__a::before { font-size: 1.1rem; }
+.qa–key .qa__a { font-size: 1.15rem; }
+
+/* PAGE 6 디렉터 */
+.director-mark { margin-bottom: 2rem; }
+.director-voice { font-size: 1rem; line-height: 1.9; }
+.director-voice .residual { font-size: 1.1em; }
+
+/* BRIDGE 마법원 */
+.bridge-magic__rotor { width: 80vw; }
+
+/* PAGE 7 이론 */
+.page-7-header { min-height: 40vh; }
+.theory-card__header { grid-template-columns: 1fr; gap: 0.6rem; }
+.theory-card__name { font-size: clamp(1.8rem, 9vw, 2.6rem); }
+.theory-quote-j { font-size: 1.1rem; padding: 1rem 0; }
+.theory-quote-original { padding: 1.2rem 0 1.2rem 1.2rem; font-size: 0.95rem; }
+.theory-evidence { max-width: 100%; }
+.theory-toggle-btn { font-size: 0.7rem; padding: 0.7em 1em; }
+.theory-full__inner p { font-size: 0.92rem; }
+
+/* 닫음 */
+.site-close__statement p { font-size: 0.97rem; }
 }
 
 /* ── 이론 토글 ───────────────────────────────── */
@@ -1067,7 +1132,7 @@ transition: background-color 0.8s ease;
 <section class="page" id="page-3" data-screen-label="03 겹쳐진 시선">
   <div class="page-marker"><span class="page-marker__num">03</span>겹쳐진 시선</div>
   <div class="oval-stack-img">
-    <img src="https://i.imgur.com/0P9O81X.png" alt="세 겹의 시선으로 본 사그라다 — 탠/흑백/블루" />
+    <img src="https://imgur.com/a/du3Md0Q.png" alt="세 겹의 시선으로 본 사그라다 — 탠/흑백/블루" />
   </div>
   <div class="oval-quotes">
     <p class="oval-quote">
@@ -1429,6 +1494,14 @@ transition: background-color 0.8s ease;
     btn.querySelector('.arrow').textContent = isOpen ? '↓' : '↑';
     btn.childNodes[0].textContent = isOpen ? '전문 보기 ' : '접기 ';
   }
+
+  /* PAGE 4 스크롤 — rAF로 묶어 모바일에서도 안정적으로 */
+  let raf4 = false;
+  function scheduleUpdate4() {
+    if (!raf4) { raf4 = true; requestAnimationFrame(() => { updatePage4(); raf4 = false; }); }
+  }
+  window.addEventListener('scroll', scheduleUpdate4, { passive: true });
+  updatePage4();
 
   /* 스크롤 배경 페이드 */
   const bgMap = [
